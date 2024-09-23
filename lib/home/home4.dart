@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_api/model/model3.dart';
 import 'package:flutter_api/model/model4.dart';
 import 'package:http/http.dart' as http;
 
@@ -13,6 +12,7 @@ class Home4 extends StatefulWidget {
 }
 
 class _Home4State extends State<Home4> {
+  
   List<Model4> userList3 = [];
   Future<List<Model4>?> getUserApi() async {
     final Response = await http

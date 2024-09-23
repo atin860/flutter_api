@@ -13,8 +13,8 @@ class Home6 extends StatefulWidget {
 }
 
 class _Home6State extends State<Home6> {
+  ///////when data is the form of nested object and array  and mixer
   List<ApiModel> list = [];
-
   Future<List<ApiModel>?> getApi() async {
     final response = await http.get(
         Uri.parse('https://webhook.site/55059801-e5ea-4a3b-8401-efe11aec236d'));
